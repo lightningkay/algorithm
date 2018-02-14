@@ -1,11 +1,5 @@
-/*************************************************************************
- > File Name: Test_Demo3.cpp
- > Author: 
- > Mail: 
- > Created Time: 2016年04月20日 星期三 15时21分58秒
- ************************************************************************/
-
 #include<cstdio>
+
 using namespace std;
 
 void print_set(int n, int *A, int cur)
@@ -42,7 +36,7 @@ int main()
     print_set(5, A, 0);
 
     printf("\n\n");
-    
+
     int B[5] = {0, 0, 0, 0, 0};
     print_set2(5, B, 0);
 }

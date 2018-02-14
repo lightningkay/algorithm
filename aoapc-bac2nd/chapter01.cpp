@@ -25,7 +25,7 @@ BOOST_AUTO_TEST_CASE(page01) {
   // 测试整数除法
   printf("%d\n", 8 / 5);
   // 测试浮点数除法
-  printf("%.1f", 8.0 / 5.0);
+  printf("%.1f\n", 8.0 / 5.0);
 }
 
 BOOST_AUTO_TEST_CASE(page02) {
@@ -39,7 +39,7 @@ BOOST_AUTO_TEST_CASE(page04) {
   // 输入一个三位数 输出数字每一位的数字
   int n;
   scanf("%d", &n);
-  printf("%d%d%d", n % 10, n / 10 % 10, n / 100 % 10);
+  printf("%d%d%d\n", n % 10, n / 10 % 10, n / 100 % 10);
 }
 
 BOOST_AUTO_TEST_CASE(page07) {
@@ -58,7 +58,7 @@ BOOST_AUTO_TEST_CASE(page07_01) {
   int n, m;
   scanf("%d", &n);
   m = n % 10 * 100 + n / 10 % 10 * 10 + n / 100 % 10;
-  printf("%3d", m);
+  printf("%3d\n", m);
 }
 
 BOOST_AUTO_TEST_CASE(page08) {
@@ -68,7 +68,7 @@ BOOST_AUTO_TEST_CASE(page08) {
   t = a;
   a = b;
   b = t;
-  printf("%d %d", a, b);
+  printf("%d %d\n", a, b);
 }
 
 BOOST_AUTO_TEST_CASE(page08_01) {
@@ -78,7 +78,7 @@ BOOST_AUTO_TEST_CASE(page08_01) {
   a = a + b;
   b = a - b;
   a = a - b;
-  printf("%d %d", a, b);
+  printf("%d %d\n", a, b);
 }
 
 BOOST_AUTO_TEST_CASE(page10) {
@@ -108,6 +108,7 @@ BOOST_AUTO_TEST_CASE(page11) {
     printf("%d %d %d", c, b, a);
   else if (c <= a && c <= b && a <= b)
     printf("%d %d %d", c, a, b);
+  printf("\n");
 }
 
 BOOST_AUTO_TEST_CASE(page11_01) {
@@ -131,7 +132,7 @@ BOOST_AUTO_TEST_CASE(page11_01) {
     c = t;
   }
 
-  printf("%d %d %d", a, b, c);
+  printf("%d %d %d\n", a, b, c);
 }
 
 BOOST_AUTO_TEST_CASE(page16) {
@@ -139,8 +140,8 @@ BOOST_AUTO_TEST_CASE(page16) {
   while (i > 0) {
     i++;
   }
-  printf("%d", i);
-  printf("%d", i - 1);
+  printf("%d\n", i);
+  printf("%d\n", i - 1);
 }
 
 BOOST_AUTO_TEST_CASE(page16_01) {
@@ -154,7 +155,7 @@ BOOST_AUTO_TEST_CASE(page16_01) {
 BOOST_AUTO_TEST_CASE(page65) {
   int a = 3, b = 4;
   swap(a, b);
-  printf("%d %d", a, b);
+  printf("%d %d\n", a, b);
 }
 
 BOOST_AUTO_TEST_CASE(page69) {

@@ -65,7 +65,7 @@ BOOST_AUTO_TEST_CASE(page24) {
     if (a < 0.000001) break;
   }
 
-  printf("%.6f", sum);
+  printf("%.6f\n", sum);
 }
 
 BOOST_AUTO_TEST_CASE(page25) {
