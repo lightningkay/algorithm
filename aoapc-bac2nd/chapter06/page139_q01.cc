@@ -1,13 +1,3 @@
-/*
- * Chapter 6
- *
- */
-
-#define BOOST_TEST_MAIN
-#define BOOST_TEST_DYN_LINK
-
-#include <boost/test/unit_test.hpp>
-
 #include <iostream>
 #include <deque>
 #include <cstring>
@@ -52,7 +42,7 @@ void run(int i) {
   ready.push_back(i);
 }
 
-BOOST_AUTO_TEST_CASE(page139) {
+int main() {
   cin >> t;
   while (t--) {
     cin >> program >> st[0] >> st[1] >> st[2] >> st[3] >> st[4] >> q;

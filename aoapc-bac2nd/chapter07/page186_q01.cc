@@ -1,12 +1,3 @@
-/*
- * Chapter 7
- *
- */
-
-#define BOOST_TEST_MAIN
-#define BOOST_TEST_DYN_LINK
-
-#include <boost/test/unit_test.hpp>
 #include <cstdio>
 #include <algorithm>
 using namespace std;
